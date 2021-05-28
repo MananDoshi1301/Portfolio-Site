@@ -4,8 +4,8 @@ import './banner.css';
 
 const Banner = () => {
     return (
-        <div>
-            <header className={`banner`}
+        <div className='container'>
+            <div className={`banner`}
                 style={{
                     backgroundSize:'cover',
                     backgroundImage: `url(${bannerImg})`,

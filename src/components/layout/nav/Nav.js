@@ -1,23 +1,13 @@
 import React from 'react';
+import './Nav.css'
 
 const Nav = () => {
   return (
     <div>
-      <nav id='nav' className=''>
-        <div className=''>
-          <a href='' className='my-2'>
-            Home
-          </a>
-          <a href='' className='my-2'>
-            About
-          </a>
-          <a href='' className='my-2'>
-            Projects
-          </a>
-          <a href='' className='my-2'>
-            Contact
-          </a>
-        </div>
+      <nav className='sideNav d-flex flex-column justify-content-around'>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
       </nav>
     </div>
   );
