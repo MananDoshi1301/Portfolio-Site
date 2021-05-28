@@ -1,6 +1,7 @@
 import Banner from './components/layout/banner/Banner';
 import Nav from './components/layout/nav/Nav';
 import Profile from './components/layout/profile/Profile';
+import Work from './components/layout/work/Work'
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Nav />
       <Banner />      
       <Profile />
+      <Work />
     </div>
   );
 }
