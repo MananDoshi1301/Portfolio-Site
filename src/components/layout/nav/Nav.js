@@ -7,6 +7,7 @@ const Nav = () => {
       <nav className='sideNav d-flex flex-column justify-content-around'>
         <a href="">Home</a>
         <a href="">About</a>
+        <a href="">Work</a>
         <a href="">Contact</a>
       </nav>
     </div>
