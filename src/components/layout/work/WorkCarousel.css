@@ -20,13 +20,13 @@
 
 .shape{
     position: absolute;
-    left: 35%;
+    left: 30%;
     top: 10%;
 }
 
 .projectDetails{
     position: absolute;
-    left: 25%;
+    left: 20%;
     top: 45%;
     z-index: 1;    
     text-align: start;
@@ -35,6 +35,12 @@
 .projectDetails-title{
     font-weight: 900;
 }
+
+.projectDetails-link{
+    font-weight: 100;
+}
+
+
 
 /* Shape Classes */
 #square {
@@ -54,17 +60,18 @@
     border-radius: 50%
 }
 
-#rectangle {
-  width: 350px;
-  height: 200px;
-  transform: rotate(90deg);
-  background: red;
-  top: 30%;
+/* Device */
+
+#laptop{
+    position: absolute;
+    left: 45%;
+    top: 25%;
+    width: 35em;    
 }
-  #triangle-down {
-    width: 0;
-    height: 0;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-    /* border-top: 400px solid white; */
-  }
+
+#tablet{
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    width: 17em;    
+}

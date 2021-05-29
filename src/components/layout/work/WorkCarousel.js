@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import './WorkCarousel.css';
+import laptop from '../../images/laptop.png';
+import tablet from '../../images/tablet.png';
 
 const WorkCarousel = () => {
 
@@ -100,6 +102,10 @@ const WorkCarousel = () => {
                     </h3>
                     <h6 className='projectDetails-link'>View Project</h6>
                   </div>
+                  <div className="device">
+                    <img src={laptop} className='laptopPng' alt="" id='laptop' />
+                    {/* <img src={tablet} className='tabletPng' alt="" id='tablet' /> */}
+                  </div>                  
                 </div>
               </div>
             );
