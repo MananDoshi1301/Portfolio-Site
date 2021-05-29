@@ -1,0 +1,9 @@
+.work-head {
+  font-weight: 900;
+  background: -webkit-linear-gradient(#ede342, blue);
+  background: -webkit-linear-gradient(#ede342, #ff51eb);
+  background: -webkit-linear-gradient(#ff51eb, #ede342);
+  /* linear-gradient(#e63946, #f1faee, #a8dadc, #1d3557); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
