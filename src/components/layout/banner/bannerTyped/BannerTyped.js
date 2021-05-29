@@ -1,16 +1,17 @@
 import React from 'react';
 import Typed from 'react-typed';
+// import 'react-typed/dist/animatedCursor.css';
 import './BannerTyped.css';
 
 const BannerTyped = () => {
   return (
     <div className='bannertyped'>
-      <div className='bannerTypedDiv'>
+      <div className='bannerTypedDiv w-75 text-center'>
         <Typed
-          strings={['Hey,<br>Welcome To my Website!','', '']}
-          typeSpeed={70}
+          strings={['Hey, I Am Manan!','Do You Know Me?', 'No?', 'Then It\'s Just A Matter<br> Of Scroll!']}
+          typeSpeed={50}
           backSpeed={50}
-          backDelay={1}
+          backDelay={3000}
           loop
           smartBackspace
         />
