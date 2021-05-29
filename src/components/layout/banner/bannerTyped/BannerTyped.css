@@ -1,0 +1,8 @@
+.bannerTypedDiv{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+
+    font-size: 4em;
+    font-weight: 900;
+}

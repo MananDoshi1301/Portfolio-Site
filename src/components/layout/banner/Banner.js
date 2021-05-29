@@ -1,5 +1,6 @@
 import React from 'react'
 import bannerImg from '../../images/milkyWay.jpg';
+import BannerTyped from './bannerTyped/BannerTyped';
 import './banner.css';
 
 const Banner = () => {
@@ -12,6 +13,7 @@ const Banner = () => {
                     backgroundPosition: 'center center',
                 }}
             />
+            <BannerTyped />
         </div>
     )
 }
