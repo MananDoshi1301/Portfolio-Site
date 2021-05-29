@@ -1,0 +1,19 @@
+.profile {
+  color: white;
+}
+
+.profile-head {
+  font-weight: 900;
+  background: -webkit-linear-gradient(red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profile-content {
+  font-weight: 900;
+  background: -webkit-linear-gradient(red, blue);
+  background: -webkit-linear-gradient(#58efec, #e85c90);
+  /* background: -webkit-linear-gradient(#e85c90, #58efec); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

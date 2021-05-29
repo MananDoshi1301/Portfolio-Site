@@ -1,12 +1,26 @@
-*{
-    padding: 0;
-    margin: 0;
-    background-color: #000;
-    color: white;
-    font-family: 'Poppins', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  /* 100, 300, 600, 900 */
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: -webkit-linear-gradient(red, blue);
 }
