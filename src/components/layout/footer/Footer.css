@@ -1,0 +1,15 @@
+.footer>div{    
+    margin-top: 10em;
+    padding:5em 2em;    
+}
+
+.footer{
+    border-radius: 40px;
+    background: #FFFFFF;     
+    background: -webkit-linear-gradient(to left, #2980B9, #6DD5FA, #FFFFFF);
+    background: linear-gradient(to left, #2980B9, #6DD5FA, #FFFFFF);
+}
+
+.logoDiv >img{
+    width: 20em;
+}
