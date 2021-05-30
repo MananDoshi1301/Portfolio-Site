@@ -5,11 +5,8 @@ const ContactForm = () => {
     return (
         <div className='container-fluid contact-form'>
             <div className="contact-form-email-title text-end text-wrap">
-                <div className="row">
-                    <div className="col-lg-4 d-flex justify-content-center align-items-center mail-icon">
-                        <i class="fas fa-paper-plane fa-8x"></i>
-                    </div>
-                    <div className="col-lg-8 contact-form-email-link">
+                <div className="row">                    
+                    <div className="col-lg-12 contact-form-email-link">
                         <a href="mailto:manandoshi1301@gmail.com" className='text-reset' target='_blank' rel='noreferrer'>
                             manandoshi1301<br />@gmail.com
                         </a>
