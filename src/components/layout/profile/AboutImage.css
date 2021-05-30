@@ -1,16 +1,17 @@
-.aboutImage > img{    
-    box-shadow: 
-    rgb(0, 0, 0) 30px 30px 0px -3px, 
-    rgb(31, 193, 27) 30px 30px;    
+.aboutImage > img {
+  box-shadow: rgb(0, 0, 0) 30px 30px 0px -3px, rgb(31, 193, 27) 30px 30px;
 
-    filter: grayscale(1);
-    transition: all 0.7s ease-out;
-    /* transition: box-shadow 0.7s ease-out; */
+  filter: grayscale(0.3);
+  transition: all 0.7s ease-out;
+  /* transition: box-shadow 0.7s ease-out; */
 }
 
-.aboutImage> img:hover{
-    filter: grayscale(0);
-    box-shadow: 
-    rgb(0, 0, 0) 40px 40px 0px -3px, 
-    rgb(31, 193, 27) 40px 40px;
+.profile:hover .aboutImage > img {
+  filter: grayscale(0);
+  box-shadow: rgb(0, 0, 0) 40px 40px 0px -3px, rgb(31, 193, 27) 40px 40px;
 }
+
+/* .aboutImage > img:hover {
+  filter: grayscale(0);
+  box-shadow: rgb(0, 0, 0) 40px 40px 0px -3px, rgb(31, 193, 27) 40px 40px;
+} */
