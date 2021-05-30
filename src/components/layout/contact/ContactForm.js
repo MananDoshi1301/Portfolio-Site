@@ -18,17 +18,17 @@ const ContactForm = () => {
             </div>
             <div className="contact-form-divider d-flex justify-content-center"><div></div></div>
             <div className="row contact-form-row text-center">
-                <div className="col-lg-3">
-                    <i class="fas fa-file-alt fa-5x"></i>
+                <div className="col-lg-3 connect-icon-wrap connect-icon-effect-7 connect-icon-effect-7b connect-icon-effect-resume">
+                    <span className='connect-icon'><i class="fas fa-file-alt"></i></span>
                 </div>
-                <div className="col-lg-3">
-                    <i class="fab fa-linkedin-in fa-5x"></i>
+                <div className="col-lg-3 connect-icon-wrap connect-icon-effect-7 connect-icon-effect-7b connect-icon-effect-linkedin">
+                    <span className='connect-icon'><i class="fab fa-linkedin-in"></i></span>
                 </div>
-                <div className="col-lg-3">
-                    <i class="fab fa-github fa-5x"></i>
+                <div className="col-lg-3 connect-icon-wrap connect-icon-effect-7 connect-icon-effect-7b connect-icon-effect-github">
+                    <span className='connect-icon'><i class="fab fa-github"></i></span>
                 </div>
-                <div className="col-lg-3">
-                    <i class="fab fa-twitter fa-5x"></i>
+                <div className="col-lg-3 connect-icon-wrap connect-icon-effect-7 connect-icon-effect-7b connect-icon-effect-twitter">
+                    <span className='connect-icon'><i class="fab fa-twitter"></i></span>
                 </div>
             </div>
         </div>
