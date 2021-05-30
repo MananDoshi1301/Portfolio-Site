@@ -1,0 +1,16 @@
+.contact {
+  margin-top: 15rem;
+
+  position: relative;
+}
+
+.contact-title {
+  letter-spacing: -0.04em;
+  position: relative;
+  line-height: 0.6em;
+  pointer-events: none;
+  flex: 1 100%;
+
+  font-size: 9em;
+  font-weight: 900;
+}
