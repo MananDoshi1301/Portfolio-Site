@@ -11,6 +11,9 @@
 	margin: 0 auto;
 	padding: 2em 0 3em;
 }
+.nav-logo > img{
+	width: 5em;
+}
 
 .nav-icon {
 	display: inline-block;
