@@ -1,77 +1,91 @@
-.carouselDiv{
-    height: 550px;
-    position: relative;
+.carouselDiv {
+  height: 550px;
+  position: relative;
 }
 
-.carouselBar{
-    width: 400px;    
+.carouselBar {
+  width: 400px;
 }
 
-
-.carouselBar-span{
-    transition: width 0.6s ease;
+.carouselBar-span {
+  transition: width 0.6s ease;
 }
 
-.arrow-icon{
-    background: -webkit-linear-gradient(#ff51eb, #ede342);  
+.arrow-icon {
+  background: -webkit-linear-gradient(#ff51eb, #ede342);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.shape{
-    position: absolute;
-    left: 30%;
-    top: 10%;
+.shape {
+  position: absolute;
+  left: 30%;
+  top: 10%;
 }
 
-.projectDetails{
-    position: absolute;
-    left: 20%;
-    top: 45%;
-    z-index: 1;    
-    text-align: start;
+.projectDetails {
+  position: absolute;
+  left: 20%;
+  top: 45%;
+  z-index: 1;
+  text-align: start;
 }
 
-.projectDetails-title{
-    font-weight: 900;
+.projectDetails-title {
+  font-weight: 900;
 }
 
-.projectDetails-link{
-    font-weight: 100;
+.projectDetails-link {
+  font-weight: 100;
 }
-
-
 
 /* Shape Classes */
 #square {
-    width: 450px;
-    height: 450px;
-    border-radius: 30px;
-    background: #b92b27;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 450px;
+  height: 450px;
+  border-radius: 30px;
+  background: #b92b27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #1565c0,
+    #b92b27
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #1565c0,
+    #b92b27
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-
 #circle {
-    width: 450px;
-    height:450px;
-    background: red;
-    border-radius: 50%
+  width: 450px;
+  height: 450px;
+  background: red;
+  border-radius: 50%;
 }
 
 /* Device */
 
-#laptop{
-    position: absolute;
-    left: 45%;
-    top: 25%;
-    width: 35em;    
+#laptop {
+  position: absolute;
+  left: 45%;
+  top: 25%;
+  /* width: 35em; */
+  width: 43%;
 }
 
-#tablet{
+#workGif {
+  position: absolute;
+  left: 50.2%;
+  top: 28%;
+  width: 32.5%;
+  height: 49%;
+  z-index: 20;
+}
+
+/* #tablet{
     position: absolute;
     left: 50%;
     top: 25%;
     width: 17em;    
-}
+} */

@@ -4,17 +4,57 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a lo
 import './WorkCarousel.css';
 import laptop from '../../images/laptop.png';
 import tablet from '../../images/tablet.png';
+import vlabGif from '../../images/vlab.gif';
 
 const WorkCarousel = () => {
-
   const projects = [
-    {title:'Contact-Keeper',type:'Website',year:'2021',link:'',leftColor:'#1565C0',rightColor:'#b92b27', shape:'square'},
-    {title:'BlogIT',type:'Website',year:'2021',link:'',leftColor:'#11998e',rightColor:'#38ef7d', shape:'circle'},
-    {title:'Github-Finder',type:'Website',year:'2021',link:'',leftColor:'#23074d',rightColor:'#cc5333', shape:'square'},
-    {title:'News-App',type:'Website',year:'2021',link:'',leftColor:'#f5af19',rightColor:'#f12711', shape:'circle'},
-    {title:'My-Toy-Store',type:'Website',year:'2021',link:'',leftColor:'#c31432',rightColor:'#240b36', shape:'square'},
-    {title:'Virtual-Labs',type:'Website',year:'2020',link:'',leftColor:'#8E2DE2',rightColor:'#4A00E0', shape:'circle'},
-  ]
+    // {title:'Contact-Keeper',type:'Website',year:'2021',link:'',leftColor:'#1565C0',rightColor:'#b92b27', shape:'square'},
+    {
+      title: 'BlogIT',
+      type: 'Website',
+      year: '2021',
+      link: '',
+      leftColor: '#11998e',
+      rightColor: '#38ef7d',
+      shape: 'circle',
+    },
+    {
+      title: 'Github-Finder',
+      type: 'Website',
+      year: '2021',
+      link: '',
+      leftColor: '#23074d',
+      rightColor: '#cc5333',
+      shape: 'square',
+    },
+    {
+      title: 'News-App',
+      type: 'Website',
+      year: '2021',
+      link: '',
+      leftColor: '#f5af19',
+      rightColor: '#f12711',
+      shape: 'circle',
+    },
+    {
+      title: 'My-Toy-Store',
+      type: 'Website',
+      year: '2021',
+      link: '',
+      leftColor: '#c31432',
+      rightColor: '#240b36',
+      shape: 'square',
+    },
+    {
+      title: 'Virtual-Labs',
+      type: 'Website',
+      year: '2020',
+      link: vlabGif,
+      leftColor: '#8E2DE2',
+      rightColor: '#4A00E0',
+      shape: 'circle',
+    },
+  ];
   const [currentSlide, setCurrentSlide] = useState(1);
   const [totalSlides, setTotalSlides] = useState(projects.length);
   const [progress, setProgress] = useState((1 / totalSlides) * 100);
@@ -71,12 +111,12 @@ const WorkCarousel = () => {
   };
 
   const getGradient = (leftCol, rightCol) => {
-    const gradientStyle={
+    const gradientStyle = {
       background: `-webkit-linear-gradient(to left, ${leftCol}, ${rightCol})`,
-      background: `linear-gradient(to left, ${leftCol}, ${rightCol})`
-    }
+      background: `linear-gradient(to left, ${leftCol}, ${rightCol})`,
+    };
     return gradientStyle;
-  }
+  };
 
   return (
     <div>
@@ -90,27 +130,46 @@ const WorkCarousel = () => {
             slideChange(current);
           }}
         >
-          {projects.map((project, key)=>{
+          {projects.map((project, key) => {
             return (
-              <div key={key} className='carouselDiv p-5 d-flex justify-content-between'>
+              <div
+                key={key}
+                className='carouselDiv p-5 d-flex justify-content-between'
+              >
                 <div className=''>
-                  <div id={`${project.shape}`} className='shape' style={getGradient(project.leftColor, project.rightColor)}></div>
+                  <div
+                    id={`${project.shape}`}
+                    className='shape'
+                    style={getGradient(project.leftColor, project.rightColor)}
+                  ></div>
                   <div className='projectDetails'>
                     <h1 className='projectDetails-title'>{project.title}</h1>
                     <h3 className='projectDetails-type'>
-                      {project.type}, <span className='projectDetails-year'>{project.year}</span>
+                      {project.type},{' '}
+                      <span className='projectDetails-year'>
+                        {project.year}
+                      </span>
                     </h3>
                     <h6 className='projectDetails-link'>View Project</h6>
                   </div>
-                  <div className="device">
-                    <img src={laptop} className='laptopPng' alt="" id='laptop' />
-                    {/* <img src={tablet} className='tabletPng' alt="" id='tablet' /> */}
-                  </div>                  
+                  <div className='device'>
+                    <img
+                      src={laptop}
+                      className='laptopPng'
+                      alt=''
+                      id='laptop'
+                    />
+                    <img
+                      id='workGif'
+                      className='workGif'
+                      src={vlabGif}
+                      alt=''
+                    />
+                  </div>
                 </div>
               </div>
             );
           })}
-                            
         </Carousel>
 
         <div className='d-flex  justify-content-end align-items-center'>
