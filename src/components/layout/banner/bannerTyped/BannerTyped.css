@@ -1,8 +1,8 @@
-.bannerTypedDiv{
-    position: absolute;
-    top: 30%;
-    left: 13%;
+.bannerTypedDiv {
+  position: absolute;
+  top: 30%;
+  left: 13%;
 
-    font-size: 4em;
-    font-weight: 900;
+  font-size: 5.5em;
+  font-weight: 900;
 }
