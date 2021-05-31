@@ -10,9 +10,9 @@
   flex: 1 100%;
   z-index: 10;
 
-  font-size: 9em;
-  font-weight: 900;
-  background: -webkit-linear-gradient(red, blue);
+  font-size: 12em;
+  font-weight: 900;  
+  background: linear-gradient( to bottom right,red, 55%, blue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
