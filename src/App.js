@@ -5,6 +5,9 @@ import Work from './components/layout/work/Work'
 import Contact from './components/layout/contact/Contact';
 import './App.css';
 import Footer from './components/layout/footer/Footer';
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 function App() {
   return (
