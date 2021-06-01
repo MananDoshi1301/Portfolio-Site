@@ -1,5 +1,8 @@
 import React from 'react'
 import './ContactForm.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const ContactForm = () => {
     return (
