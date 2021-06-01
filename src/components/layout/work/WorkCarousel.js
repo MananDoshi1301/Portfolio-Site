@@ -3,58 +3,11 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import './WorkCarousel.css';
 import laptop from '../../images/laptop.png';
-import tablet from '../../images/tablet.png';
 import vlabGif from '../../images/vlab.gif';
+import { projects } from '../../Data/WorkData';
 
 const WorkCarousel = () => {
-  const projects = [
-    // {title:'Contact-Keeper',type:'Website',year:'2021',link:'',leftColor:'#1565C0',rightColor:'#b92b27', shape:'square'},
-    {
-      title: 'BlogIT',
-      type: 'Website',
-      year: '2021',
-      link: '',
-      leftColor: '#11998e',
-      rightColor: '#38ef7d',
-      shape: 'circle',
-    },
-    {
-      title: 'Github-Finder',
-      type: 'Website',
-      year: '2021',
-      link: '',
-      leftColor: '#23074d',
-      rightColor: '#cc5333',
-      shape: 'square',
-    },
-    {
-      title: 'News-App',
-      type: 'Website',
-      year: '2021',
-      link: '',
-      leftColor: '#f5af19',
-      rightColor: '#f12711',
-      shape: 'circle',
-    },
-    {
-      title: 'My-Toy-Store',
-      type: 'Website',
-      year: '2021',
-      link: '',
-      leftColor: '#c31432',
-      rightColor: '#240b36',
-      shape: 'square',
-    },
-    {
-      title: 'Virtual-Labs',
-      type: 'Website',
-      year: '2020',
-      link: vlabGif,
-      leftColor: '#8E2DE2',
-      rightColor: '#4A00E0',
-      shape: 'circle',
-    },
-  ];
+
   const [currentSlide, setCurrentSlide] = useState(1);
   const [totalSlides, setTotalSlides] = useState(projects.length);
   const [progress, setProgress] = useState((1 / totalSlides) * 100);
@@ -130,10 +83,11 @@ const WorkCarousel = () => {
             slideChange(current);
           }}
         >
-          {projects.map((project, key) => {
+          {projects.map((project) => {
             return (
               <div
-                key={key}
+                key={project.id}
+                id={project.id}
                 className='carouselDiv p-5 d-flex justify-content-between'
               >
                 <div className=''>
