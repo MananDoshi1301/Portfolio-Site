@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+
+import { projects } from '../../Data/WorkData';
 import './WorkCarousel.css';
 import laptop from '../../images/laptop.png';
 import vlabGif from '../../images/vlab.gif';
