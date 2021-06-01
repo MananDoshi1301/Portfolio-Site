@@ -7,6 +7,7 @@ import './App.css';
 import Footer from './components/layout/footer/Footer';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Scrollpop from './components/layout/scrollpop/Scrollpop';
 AOS.init();
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Work />
       <Contact />
       <Footer />
+      <Scrollpop />
     </div>
   );
 }
