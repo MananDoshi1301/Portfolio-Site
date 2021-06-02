@@ -27,7 +27,7 @@
   position: absolute;
   left: 20%;
   top: 45%;
-  z-index: 1;
+  /* z-index: 1; */
   text-align: start;
 }
 
@@ -80,7 +80,7 @@
   top: 28%;
   width: 32.5%;
   height: 49%;
-  z-index: 20;
+  /* z-index: 20; */
 }
 
 /* #tablet{
