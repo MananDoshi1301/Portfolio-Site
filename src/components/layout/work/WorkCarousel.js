@@ -6,12 +6,14 @@ import { projects } from '../../Data/WorkData';
 import './WorkCarousel.css';
 import laptop from '../../images/laptop.png';
 import vlabGif from '../../images/vlab.gif';
+import WorkModal from './workmodal/WorkModal';
 
 const WorkCarousel = () => {
 
   const [currentSlide, setCurrentSlide] = useState(1);
   const [totalSlides, setTotalSlides] = useState(projects.length);
   const [progress, setProgress] = useState((1 / totalSlides) * 100);
+  const [showModal, setShowModal] = useState(false);
   const carouselProps = {
     showThumbs: false,
     swipeable: true,
@@ -27,7 +29,7 @@ const WorkCarousel = () => {
 
   const arrowStyles = {
     position: 'absolute',
-    zIndex: 2,
+    // zIndex: 2,
     top: 'calc(70%)',
     // height: 50,
     // width: 80,
@@ -49,7 +51,7 @@ const WorkCarousel = () => {
   const leftArrow = (onClickHandler, label) => {
     return (
       <div
-        style={{ ...arrowStyles, left: '30px' }}
+        style={{ ...arrowStyles, left: '30px'}}
         onClick={onClickHandler}
         title={label}
       >
@@ -105,7 +107,7 @@ const WorkCarousel = () => {
                         {project.year}
                       </span>
                     </h3>
-                    <h6 className='projectDetails-link'>View Project</h6>
+                    <h6 className='projectDetails-link' onClick={()=>setShowModal(true)}>View Project</h6>
                   </div>
                   <div className='device'>
                     <img
@@ -126,6 +128,8 @@ const WorkCarousel = () => {
             );
           })}
         </Carousel>
+
+        <WorkModal showModal={showModal} setShowModal={setShowModal} />
 
         <div className='d-flex  justify-content-end align-items-center'>
           <div>0{currentSlide}</div>
