@@ -51,7 +51,7 @@ const WorkCarousel = () => {
   const leftArrow = (onClickHandler, label) => {
     return (
       <div
-        style={{ ...arrowStyles, left: '30px'}}
+        style={{ ...arrowStyles, left: '30px', zIndex:1}}
         onClick={onClickHandler}
         title={label}
       >
