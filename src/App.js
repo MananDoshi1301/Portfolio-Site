@@ -6,6 +6,7 @@ import Contact from './components/layout/contact/Contact';
 import './App.css';
 import Footer from './components/layout/footer/Footer';
 import Scrollpop from './components/layout/scrollpop/Scrollpop';
+import ProgressBar from './components/layout/progressbar/ProgressBar';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Contact />
       <Footer />
       <Scrollpop />
+      <ProgressBar />
     </div>
   );
 }
