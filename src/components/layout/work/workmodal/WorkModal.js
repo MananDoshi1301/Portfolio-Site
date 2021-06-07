@@ -1,10 +1,13 @@
 import React from 'react';
+import ReactModal from 'react-modal';
 import "./WorkModal.css";
 
-const WorkModal = () => {
+const WorkModal = ({showModal, setShowModal}) => {
   return (
-    <div className='workModal contents'>
-
+    <div>
+      <ReactModal isOpen={showModal} >
+        <button onClick={()=>setShowModal(false)}>Close</button>
+      </ReactModal>
     </div>
   )
 }
