@@ -51,3 +51,15 @@
     transform: translate(0, -12px);
   }
 }
+
+.footer-social {
+  font-size: 0.3em;
+}
+
+.footer-social-link{
+  transition: all 0.2s ease-in;
+}
+
+.footer-social-link:hover{
+  transform: translate(0, -10px);
+}

@@ -34,10 +34,11 @@ const Footer = () => {
                     />
                   </div>
                 </div>
-                <div className='text-end'>
-                  <span>
-                    {/* <i class="fab fa-twitter"></i>
-                    <i class="fab fa-linkedin-in"></i> */}
+                <div className='d-flex justify-content-between align-items-center'>
+                  <span className='footer-social d-flex justify-content-between gap-5'>
+                    <i class="fas fa-envelope footer-social-link"></i>
+                    <i class="fab fa-linkedin-in footer-social-link"></i>
+                    <i class="fab fa-twitter footer-social-link"></i>
                   </span>
                   Doshi
                 </div>
@@ -49,6 +50,7 @@ const Footer = () => {
               data-aos-delay='900'
             >
               Copyrights @ 2021 MananDoshi. All rights reserved.
+              {/* <a href="https://www.vecteezy.com/"> PNGs by Vecteezy</a> */}
             </div>
           </div>
           {/* <div className="col-lg-2"></div> */}
