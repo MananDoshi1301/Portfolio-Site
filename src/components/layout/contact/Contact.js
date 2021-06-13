@@ -1,6 +1,7 @@
 import React from 'react';
 import ContactForm from './ContactForm';
 import './Contact.css';
+import ContactAnimation from './ContactAnimation';
 
 const Contact = () => {
   return (
@@ -9,7 +10,9 @@ const Contact = () => {
         Connect!
       </div>
       <div className='row'>
-        <div className='col-lg-5'></div>
+        <div className='col-lg-5'>
+          <ContactAnimation />
+        </div>
         <div className='col-lg-7'>
           <ContactForm />
         </div>
