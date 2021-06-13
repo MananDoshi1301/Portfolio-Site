@@ -11,7 +11,10 @@
 }
 
 .footer-header div {
-  font-family: 'Limelight', cursive;
+  /* font-family: 'Limelight', cursive; */
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Sacramento', cursive;
+  font-weight: 900;
   font-size: 1.3em;
 }
 
@@ -21,4 +24,30 @@
 
 .footer-logo {
   width: 37em;
+}
+
+.w-30{
+  width: 30% !important;
+}
+
+.star{
+  animation: starMovement 2s infinite ease-in-out;
+}
+
+.star-1{
+  animation-duration: 2s;
+}
+
+.star-3{
+  animation-duration: 2.5s;
+}
+
+.star-2{
+  animation-duration: 3s;
+}
+
+@keyframes starMovement {
+  50%{
+    transform: translate(0, -12px);
+  }
 }
