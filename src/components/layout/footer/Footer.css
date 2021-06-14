@@ -48,18 +48,91 @@
 
 @keyframes starMovement {
   50%{
-    transform: translate(0, -12px);
+    transform: translate(0, -5px);
   }
 }
 
 .footer-social {
-  font-size: 0.3em;
+  font-size: 0.23em;
+}
+
+.footer-social-div{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .footer-social-link{
-  transition: all 0.2s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  border-radius: 40%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: footerIconMovement 2s infinite ease-in-out;
 }
 
-.footer-social-link:hover{
-  transform: translate(0, -10px);
+#footer-mail{
+  background-color: #F7A000;
+  animation-duration: 2.5s;
+}
+
+#footer-mail:hover{
+  color: #F7A000;
+  background: white;
+}
+
+#footer-linkedin{
+  background-color: #0077b5;
+  animation-duration: 2s;
+}
+
+#footer-linkedin:hover{
+  color: #0077b5;
+  background: white;
+}
+
+#footer-twitter{
+  background-color: #1DA1F2;
+  animation-duration: 2.5s;
+}
+
+#footer-twitter:hover{
+  color: #1DA1F2;
+  background-color: white;
+}
+
+.footer-shadow{
+  width: 1.2em;
+  height: 0.3em;
+  background: gray;
+  border-radius: 50%;
+  opacity: 0.3;
+  filter: blur(3px);
+  animation: footerShadowMovement 2s infinite ease-in-out;
+}
+
+.footer-shadow-1{
+  animation-duration: 2.5s;
+}
+
+.footer-shadow-2{
+  animation-duration: 2s;
+}
+
+.footer-shadow-3{
+  animation-duration: 2.5s;
+}
+
+@keyframes footerIconMovement {
+  50%{
+    transform: translate(0, -2px);
+  }
+}
+
+@keyframes footerShadowMovement {
+  50%{    
+    filter: blur(5px);
+  }
 }

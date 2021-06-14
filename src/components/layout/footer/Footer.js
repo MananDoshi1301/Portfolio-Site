@@ -36,9 +36,27 @@ const Footer = () => {
                 </div>
                 <div className='d-flex justify-content-between align-items-center'>
                   <span className='footer-social d-flex justify-content-between gap-5'>
-                    <i class="fas fa-envelope footer-social-link"></i>
-                    <i class="fab fa-linkedin-in footer-social-link"></i>
-                    <i class="fab fa-twitter footer-social-link"></i>
+                    <div className='footer-social-div'>
+                      <i
+                        id='footer-mail'
+                        className='fas fa-envelope footer-social-link'
+                      ></i>
+                      <div className="footer-shadow footer-shadow-1"></div>
+                    </div>
+                    <div className='footer-social-div'>
+                      <i
+                        id='footer-linkedin'
+                        className='fab fa-linkedin-in footer-social-link'
+                      ></i>
+                      <div className="footer-shadow footer-shadow-2"></div>
+                    </div>
+                    <div className='footer-social-div'>
+                      <i
+                        id='footer-twitter'
+                        className='fab fa-twitter footer-social-link'
+                      ></i>
+                      <div className="footer-shadow footer-shadow-3"></div>
+                    </div>
                   </span>
                   Doshi
                 </div>
@@ -65,7 +83,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>    
+    </div>
   );
 };
 
