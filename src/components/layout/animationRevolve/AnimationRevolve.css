@@ -1,0 +1,12 @@
+.revolve-mainDiv{
+    position: relative;
+}
+
+.revolve-subDiv{
+    position: absolute;
+    right: 0%;
+}
+
+.revolve-subDiv > img{
+    
+}

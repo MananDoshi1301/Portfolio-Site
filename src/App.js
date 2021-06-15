@@ -7,12 +7,14 @@ import './App.css';
 import Footer from './components/layout/footer/Footer';
 import Scrollpop from './components/layout/scrollpop/Scrollpop';
 import ProgressBar from './components/layout/progressbar/ProgressBar';
+import AnimationRevolve from './components/layout/animationRevolve/AnimationRevolve';
 
 function App() {
   return (
     <div className="App">
       <Nav />
       <Banner />
+      <AnimationRevolve />
       <Profile />
       <Work />
       <Contact />
