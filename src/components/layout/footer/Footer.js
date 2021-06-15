@@ -65,7 +65,7 @@ const Footer = () => {
             <div
               className='copyrightDiv text-center mb-5'
               data-aos='fade-down'
-              data-aos-delay='900'
+              data-aos-delay='300'
             >
               Copyrights @ 2021 MananDoshi. All rights reserved.
               {/* <a href="https://www.vecteezy.com/"> PNGs by Vecteezy</a> */}
