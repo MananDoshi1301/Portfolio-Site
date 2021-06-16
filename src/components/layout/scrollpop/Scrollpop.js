@@ -18,7 +18,7 @@ const Scrollpop = () => {
         initial={{ y: '100vw' }} animate={{ y: 0 }} transition={{ type: 'spring', stiffness: 30 }}
         className='scrollpop' onClick={() => { window.scrollTo(0, 0) }}>
         <div>
-          <i class='fas fa-chevron-up fa-2x'></i>
+          <i className='fas fa-chevron-up fa-2x'></i>
         </div>
       </motion.div>)}
     </div>

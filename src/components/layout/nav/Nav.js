@@ -16,13 +16,13 @@ const Nav = () => {
 
         <motion.div initial={initial} animate={animate} transition={{ type: "spring", stiffness: 30, delay: 0 }} className='d-flex justify-content-center align-items-center nav-logo' onClick={() => window.scrollTo(0, 0)} ><img src={logo} alt="" /></motion.div>
 
-        <motion.a initial={initial} animate={animate} transition={{ type: "spring", stiffness: 30, delay: 0.5 }} onClick={() => window.scrollTo(0, 0)} className='d-flex justify-content-center align-items-center nav-icon'><i class="fas fa-home fa-2x"></i></motion.a>
+        <motion.a initial={initial} animate={animate} transition={{ type: "spring", stiffness: 30, delay: 0.5 }} onClick={() => window.scrollTo(0, 0)} className='d-flex justify-content-center align-items-center nav-icon'><i className="fas fa-home fa-2x"></i></motion.a>
 
-        <motion.a initial={initial} animate={animate} transition={{ type: "spring", stiffness: 30, delay: 1 }} href="#about" className='d-flex justify-content-center align-items-center nav-icon'><i class="fas fa-user fa-2x"></i></motion.a>
+        <motion.a initial={initial} animate={animate} transition={{ type: "spring", stiffness: 30, delay: 1 }} href="#about" className='d-flex justify-content-center align-items-center nav-icon'><i className="fas fa-user fa-2x"></i></motion.a>
 
-        <motion.a initial={initial} animate={animate} transition={{ type: "spring", stiffness: 30, delay: 1.5 }} href="#work" className='d-flex justify-content-center align-items-center nav-icon'><i class="fas fa-briefcase fa-2x"></i></motion.a>
+        <motion.a initial={initial} animate={animate} transition={{ type: "spring", stiffness: 30, delay: 1.5 }} href="#work" className='d-flex justify-content-center align-items-center nav-icon'><i className="fas fa-briefcase fa-2x"></i></motion.a>
 
-        <motion.a initial={initial} animate={animate} transition={{ type: "spring", stiffness: 30, delay: 2 }} href="#contact" className='d-flex justify-content-center align-items-center nav-icon'><i class="fas fa-phone-alt fa-2x"></i></motion.a>
+        <motion.a initial={initial} animate={animate} transition={{ type: "spring", stiffness: 30, delay: 2 }} href="#contact" className='d-flex justify-content-center align-items-center nav-icon'><i className="fas fa-phone-alt fa-2x"></i></motion.a>
       </nav>
     </div>
   );
