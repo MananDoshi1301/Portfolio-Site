@@ -16,6 +16,7 @@ body {
   background: #000000;
   /* background: -webkit-linear-gradient( #000000, #000000,  #434343,); 
   background: linear-gradient( #000000, #000000,#434343);  */
+  overflow-x: hidden;
 }
 
 a {
