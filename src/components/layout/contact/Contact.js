@@ -5,7 +5,7 @@ import ContactAnimation from './ContactAnimation';
 
 const Contact = () => {
   return (
-    <div className='container contact'>
+    <div className='container contact' id='contact'>
       <div className='display-1 h1 text-end contact-title'>
         Connect!
       </div>
