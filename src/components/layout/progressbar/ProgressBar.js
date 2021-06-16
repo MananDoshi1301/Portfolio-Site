@@ -1,23 +1,52 @@
-import React from 'react'
-import { useTransform, useViewportScroll } from 'framer-motion';
+import React,{useEffect, useState} from 'react'
 
 const ProgressBar = () => {
-  const { scrollYProgress } = useViewportScroll();
-  const scrollWidth = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  React.useEffect(() => {
-    console.log(scrollWidth.current);
-  }, [scrollWidth.current])
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const getDocHeight = () => {
+    return Math.max(
+      document.body.scrollHeight, document.documentElement.scrollHeight,
+      document.body.offsetHeight, document.documentElement.offsetHeight,
+      document.body.clientHeight, document.documentElement.clientHeight
+    );
+  }
+
+  const calculateScrollDistance = () => {
+    const scrollTop = window.pageYOffset; // how much the user has scrolled by
+    const winHeight = window.innerHeight;
+    const docHeight = getDocHeight();
+    const totalDocScrollLength = docHeight - winHeight;    
+    const scrollValue = Math.floor(scrollTop / totalDocScrollLength * 100);
+    
+    setScrollPosition(scrollValue); 
+  }
+
+  const listenToScrollEvent = () => {
+    document.addEventListener("scroll", () => {
+      requestAnimationFrame(() => {
+        // this.calculateScrollDistance();
+        calculateScrollDistance();
+      });
+    });
+  }
+
+  useEffect(()=>{
+    listenToScrollEvent();
+  },[scrollPosition])
   const style = {
     position: 'fixed',
     top: 0,
     left: 0,
-    height: '30px',
-    backgroundColor: 'yellow'
+    height: '20px',
+    backgroundImage: 'linear-gradient( left, #FDC830 , #F37335)',
+    zIndex:1,
+    // transition:'all 1s ease'
   }
   return (
     <div>
       <div className='progressBar'>
-        <div style={{ ...style, width: `${scrollWidth}` }}></div>
+        <div style={{ ...style, width: `${scrollPosition}%` }}></div>
+        {console.log(scrollPosition)}
       </div>
     </div>
   )
