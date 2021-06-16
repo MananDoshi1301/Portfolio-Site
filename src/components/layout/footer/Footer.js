@@ -7,6 +7,15 @@ import 'aos/dist/aos.css';
 AOS.init();
 
 const Footer = () => {
+
+  const linkedin = 'http://www.linkedin.com/in/manandoshi1301';
+  const twitter = 'https://twitter.com/Manan_Doshi1301';
+  const email = 'mailto:manandoshi1301@gmail.com';
+
+  const linkRedirect = link => {
+    window.open(link, '_blank');
+  }
+
   return (
     <div className='container'>
       <div className='footer'>
@@ -40,6 +49,7 @@ const Footer = () => {
                       <i
                         id='footer-mail'
                         className='fas fa-envelope footer-social-link'
+                        onClick={() => linkRedirect(email)}
                       ></i>
                       <div className="footer-shadow footer-shadow-1"></div>
                     </div>
@@ -47,6 +57,7 @@ const Footer = () => {
                       <i
                         id='footer-linkedin'
                         className='fab fa-linkedin-in footer-social-link'
+                        onClick={() => linkRedirect(linkedin)}
                       ></i>
                       <div className="footer-shadow footer-shadow-2"></div>
                     </div>
@@ -54,6 +65,7 @@ const Footer = () => {
                       <i
                         id='footer-twitter'
                         className='fab fa-twitter footer-social-link'
+                        onClick={() => linkRedirect(twitter)}
                       ></i>
                       <div className="footer-shadow footer-shadow-3"></div>
                     </div>
