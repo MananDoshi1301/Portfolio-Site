@@ -51,7 +51,7 @@ const WorkCarousel = () => {
   const leftArrow = (onClickHandler, label) => {
     return (
       <div
-        style={{ ...arrowStyles, left: '30px', zIndex:1}}
+        style={{ ...arrowStyles, left: '30px', zIndex: 1 }}
         onClick={onClickHandler}
         title={label}
       >
@@ -73,6 +73,10 @@ const WorkCarousel = () => {
     };
     return gradientStyle;
   };
+
+  const linkRedirect = (link) => {
+    window.open(link, '_blank');
+  }
 
   return (
     <div>
@@ -107,7 +111,10 @@ const WorkCarousel = () => {
                         {project.year}
                       </span>
                     </h3>
-                    <h6 className='projectDetails-link' onClick={()=>setShowModal(true)}>View Project</h6>
+                    {project.link &&
+                      <h4 className='projectDetails-link' onClick={() => linkRedirect(project.link)}>View Project</h4>}
+                    {project.repo &&
+                      <h5 className='projectDetails-link' onClick={() => linkRedirect(project.repo)}>Watch Code</h5>}
                   </div>
                   <div className='device'>
                     <img
@@ -116,12 +123,14 @@ const WorkCarousel = () => {
                       alt=''
                       id='laptop'
                     />
-                    <img
+                    <video id='workGif' autoplay='true' controls className='bg-dark'
+                      preload="auto" src="https://awevideo.s3.amazonaws.com/video-4152421-1a4327c158f8e4feaa2ac5ad902f0ec7.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20210616%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20210616T150121Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=6b4362dfce28ef6b135792ea6d22f424b2cbdf0081bdb069825cc31d358294f8"></video>
+                    {/* <img
                       id='workGif'
                       className='workGif'
                       src={vlabGif}
                       alt=''
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>

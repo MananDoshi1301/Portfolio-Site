@@ -36,7 +36,12 @@
 }
 
 .projectDetails-link {
-  font-weight: 100;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.projectDetails-link:hover{
+  text-decoration: underline;
 }
 
 /* Shape Classes */
