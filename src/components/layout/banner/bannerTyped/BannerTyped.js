@@ -12,7 +12,7 @@ const BannerTyped = () => {
           typeSpeed={65}
           backSpeed={50}
           backDelay={1300}
-          // loop
+          loop
           smartBackspace
         />
       </div>
