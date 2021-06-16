@@ -8,6 +8,8 @@
 
 .revolve-subDiv > img{
     position: absolute;            
-    right: -23%;
+    right: -20%;
     max-width: 40%;
+    z-index: -1;
+    transition:all 0.2s ease;
 }
