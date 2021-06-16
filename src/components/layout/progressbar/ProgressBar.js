@@ -45,7 +45,6 @@ const ProgressBar = () => {
     <div>
       <div className='progressBar'>
         <div style={{ ...style, width: `${scrollPosition}%` }}></div>
-        {console.log(scrollPosition)}
       </div>
     </div>
   )
