@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 
 const ProgressBar = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -15,10 +15,10 @@ const ProgressBar = () => {
     const scrollTop = window.pageYOffset; // how much the user has scrolled by
     const winHeight = window.innerHeight;
     const docHeight = getDocHeight();
-    const totalDocScrollLength = docHeight - winHeight;    
+    const totalDocScrollLength = docHeight - winHeight;
     const scrollValue = Math.floor(scrollTop / totalDocScrollLength * 100);
-    
-    setScrollPosition(scrollValue); 
+
+    setScrollPosition(scrollValue);
   }
 
   const listenToScrollEvent = () => {
@@ -30,17 +30,16 @@ const ProgressBar = () => {
     });
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     listenToScrollEvent();
-  },[scrollPosition])
+  }, [scrollPosition])
   const style = {
     position: 'fixed',
     top: 0,
     left: 0,
-    height: '20px',
-    backgroundImage: 'linear-gradient( left, #FDC830 , #F37335)',
-    zIndex:1,
-    // transition:'all 1s ease'
+    height: '15px',
+    background: 'linear-gradient( to right, #FDC830 , #F37335)',
+    zIndex: 1,
   }
   return (
     <div>
