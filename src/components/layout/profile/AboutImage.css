@@ -2,11 +2,11 @@
   box-shadow: rgb(0, 0, 0) 30px 30px 0px -3px, rgb(31, 193, 27) 30px 30px;
 
   box-shadow: 
-  rgba(170, 204, 0, 0.4) 7px 7px, 
-  rgba(128, 185, 24, 0.3) 15px 15px, 
-  rgba(85, 166, 48, 0.2) 20px 20px, 
-  rgba(43, 147, 72, 0.1) 25px 25px, 
-  rgba(0, 127, 95, 0.05) 30px 30px;
+  rgba(91,235,234, 0.4) 7px 7px, 
+  rgba(37, 228, 228, 0.3) 15px 15px, 
+  rgba(27, 218, 218, 0.2) 20px 20px, 
+  rgba(20, 163, 163, 0.1) 25px 25px, 
+  rgba(18, 145, 145, 0.05) 30px 30px;
   
   filter: grayscale(0.3);
   transition: all 0.7s ease-out; 
@@ -16,11 +16,11 @@
   filter: grayscale(0);
   /* box-shadow: rgb(0, 0, 0) 40px 40px 0px -3px, rgb(31, 193, 27) 40px 40px; */
   box-shadow: 
-  rgba(170, 204, 0, 0.6) 7px 7px, 
-  rgba(128, 185, 24, 0.5) 15px 15px, 
-  rgba(85, 166, 48, 0.4) 20px 20px, 
-  rgba(43, 147, 72, 0.3) 25px 25px, 
-  rgba(0, 127, 95, 0.25) 30px 30px;
+  rgba(91,235,234, 0.6) 7px 7px, 
+  rgba(37, 228, 228, 0.5) 15px 15px, 
+  rgba(27, 218, 218, 0.4) 20px 20px, 
+  rgba(20, 163, 163, 0.3) 25px 25px, 
+  rgba(18, 145, 145, 0.25) 30px 30px;
 }
 
 /* .aboutImage > img:hover {
