@@ -1,7 +1,7 @@
 .about-content {
     font-weight: 900;
     background: -webkit-linear-gradient(red, blue);
-    background: linear-gradient(#58efec,20%, #e85c90);
+    background: linear-gradient(#58efec, #e85c90, #58efec,#e85c90,#58efec, 60%,#e85c90);
     /* background: -webkit-linear-gradient(#8e9eab, #eef2f3); */
     /* background: -webkit-linear-gradient(#e85c90, #58efec); */
     -webkit-background-clip: text;
@@ -10,4 +10,8 @@
 
   .w-80{
     width: 80%;
+  }
+
+  .about-technologies{
+    font-weight: 800;
   }
