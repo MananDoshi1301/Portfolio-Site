@@ -1,5 +1,5 @@
 import React from 'react'
-import gifAnimation from '../../images/dancingAnime1.gif'
+import gifAnimation from '../../images/dancingAnime2.gif'
 
 const ContactAnimation = () => {
     return (
