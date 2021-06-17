@@ -11,9 +11,12 @@
 
   font-size: 12em;
   font-weight: 900;  
-  background: linear-gradient( to bottom right,red, 55%, blue);
-  background: linear-gradient( to bottom right,#FC5C7D, #6A82FB);
+  /* background: linear-gradient( to bottom right,red, 55%, blue); */
+  background: linear-gradient( red, 60%, blue);
+  /* background: linear-gradient( to bottom right,#FC5C7D, #6A82FB);
   background: linear-gradient( to bottom right,#FC5C7D, #6A82FB);  
+  background: linear-gradient( to bottom right,#ff0f7b, #f89b29);  
+  background: linear-gradient( #42047e, #07f49e);   */
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
