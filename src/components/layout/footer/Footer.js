@@ -25,7 +25,7 @@ const Footer = () => {
               <div data-aos='fade-right'>
                 <div className='d-flex jusify-content-between'>
                   Manan
-                  <div className='d-flex justify-content-between align-items-center'>
+                  <div className='d-flex justify-content-around align-items-center'>
                     <img
                       src={star}
                       className='img-fluid star star-1 w-30 align-self-start'
