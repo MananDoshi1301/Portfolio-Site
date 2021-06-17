@@ -111,10 +111,12 @@ const WorkCarousel = () => {
                         {project.year}
                       </span>
                     </h3>
-                    {project.link &&
-                      <h4 className='projectDetails-link' onClick={() => linkRedirect(project.link)}>View Project</h4>}
-                    {project.repo &&
-                      <h5 className='projectDetails-link' onClick={() => linkRedirect(project.repo)}>Watch Code</h5>}
+                    <div className='d-flex gap-3'>
+                      {project.link &&
+                        <span className='projectDetails-link' onClick={() => linkRedirect(project.link)}><i class="fas fa-external-link-alt fa-2x"></i></span>}
+                      {project.repo &&
+                        <span className='projectDetails-link' onClick={() => linkRedirect(project.repo)}><i class="fab fa-github fa-2x"></i></span>}
+                    </div>
                   </div>
                   <div className='device'>
                     <img
