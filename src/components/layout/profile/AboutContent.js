@@ -21,12 +21,12 @@ const AboutContent = () => {
         </div>
         <div className='about-technologies'>
           <div>Here are a few technologies I've been working with recently:</div>
-          <div className='d-flex gap-3'>
-            <ul>
+          <div className='d-flex gap-5'>
+            <ul className='about-technologies-ul'>
               <li>JavaScript (ES6+)</li>
               <li>Node.js</li>
             </ul>
-            <ul>
+            <ul className='about-technologies-ul'>
               <li>React.js</li>
               <li>UI Libraries</li>
             </ul>
