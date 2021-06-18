@@ -13,7 +13,7 @@ const AboutContent = () => {
       data-aos-duration='1000'
     >
       <div className='w-80 about-content d-flex flex-column justify-content-around'>
-        <div>
+        <div className='about-content-main'>
           Enthusiastic about Web Architectures, Machine Learning, and Blockchain
           Technologies, I am currently pursuing a Bachelor's of Technology in
           Information Technology. Looking forward to gaining industry-level
