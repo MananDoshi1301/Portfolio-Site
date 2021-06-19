@@ -1,6 +1,7 @@
 .about-content {
     font-weight: 900;    
-    background: linear-gradient(#f68080,#d6d6d6, #f68080,#d6d6d6, #f68080,#d6d6d6);    
+    background: linear-gradient(#f68080,#cde7b0, #f68080,#cde7b0, #f68080,#cde7b0);    
+    background: linear-gradient(#f68080,#D6BA73, #f68080,#D6BA73, #f68080,#D6BA73);    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
