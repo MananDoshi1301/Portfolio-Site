@@ -124,7 +124,7 @@ const WorkCarousel = () => {
                       alt=''
                       id='laptop'
                     />
-                    <video controls autoPlay='true' id='workGif' className='workGif' style={{ backgroundColor: 'black' }}>
+                    <video controls autoPlay='true' loop='true' id='workGif' className='workGif' style={{ backgroundColor: 'black' }}>
                       <source src={project.video} type="video/mp4" />
                     </video>
                     {/* <img
