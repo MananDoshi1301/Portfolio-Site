@@ -1,8 +1,9 @@
-import vlabGif from '../images/vlab.gif';
 import blogITVideo from '../images/blogIT.mp4';
 import githubFinderVideo from '../images/githubFinder.mp4';
 import newsAppVideo from '../images/newsApp.mp4';
 import toyStoreVideo from '../images/toyStore.mp4';
+import vlabVideo from '../images/vlab.mp4';
+
 const projects = [
   // {
   //   id: 1,
@@ -72,9 +73,9 @@ const projects = [
     leftColor: '#8E2DE2',
     rightColor: '#4A00E0',
     shape: 'circle',
-    link: vlabGif,
+    link: '',
     repo: 'https://github.com/MananDoshi1301/VirtualLab-Canvas',
-    video: null,
+    video: vlabVideo,
   },
 ];
 
