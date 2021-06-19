@@ -1,0 +1,36 @@
+.workIcon-icon{
+    transition: all 0.4s ease;
+    animation: wave 2s infinite ease-in-out;
+}
+
+.workIcon-icon1{
+    animation-duration: 2.1s;
+}
+
+.workIcon-icon2{
+    animation-duration: 3.2s;
+}
+
+.workIcon-icon3{
+    animation-duration: 2.6s;
+}
+
+.workIcon-icon4{
+    animation-duration: 2.9s;
+}
+
+.workIcon-icon5{
+    animation-duration: 3.4s;
+}
+
+.workIcon-icon6{
+    animation-duration: 2.4s;
+}
+
+.workIcon-icon7{
+    animation-duration: 2.7s;
+}
+
+.workIcon-icon8{
+    animation-duration: 3.1s;
+}
