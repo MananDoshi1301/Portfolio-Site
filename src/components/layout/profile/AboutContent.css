@@ -1,31 +1,31 @@
 .about-content {
-    font-weight: 900;    
-    background: linear-gradient(#f68080,#cde7b0, #f68080,#cde7b0, #f68080,#cde7b0);    
+  font-weight: 650;
+  /* background: linear-gradient(#f68080,#cde7b0, #f68080,#cde7b0, #f68080,#cde7b0);    
     background: linear-gradient(#f68080,#fff, #f68080,#fff, #f68080,#fff);    
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+    -webkit-text-fill-color: transparent; */
+}
 
-  .w-90{
-    width: 90%;
-  }  
+.w-90 {
+  width: 90%;
+}
 
-  .h-85{
-    height: 85%;
-  }  
+.h-85 {
+  height: 85%;
+}
 
-  .about-technologies{
-    font-weight: 800;    
-  }
+.about-technologies {
+  font-weight: 800;
+}
 
-  .about-technologies-ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .about-technologies-ul li:before {
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900;
-    content: "\f054"; 
-    padding-right:8px;
-    }
+.about-technologies-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-technologies-ul li:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f054';
+  padding-right: 8px;
+}
