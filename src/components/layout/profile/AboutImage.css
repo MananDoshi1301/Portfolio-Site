@@ -7,18 +7,20 @@
   rgba(254, 206, 72, 0.2) 20px 20px, 
   rgba(254, 200, 52, 0.1) 25px 25px, 
   rgba(254, 195, 32, 0.05) 30px 30px; */
-  
+  border: 5px solid white;
+  border-radius: 15px;
   filter: grayscale(0.3);
-  transition: all 0.7s ease-out; 
+  transition: all 0.7s ease-out;
 }
 
-.profile-head+.row:hover .aboutImage > img {
+.profile-head + .row:hover .aboutImage > img {
   filter: grayscale(0);
   /* box-shadow: rgb(0, 0, 0) 40px 40px 0px -3px, rgb(31, 193, 27) 40px 40px; */
-  box-shadow: 
-  rgba(254, 217, 113, 0.6) 7px 7px, 
-  rgba(254, 211, 93, 0.5) 15px 15px, 
-  rgba(254, 206, 72, 0.4) 20px 20px, 
-  rgba(254, 200, 52, 0.3) 25px 25px, 
-  rgba(254, 195, 32, 0.25) 30px 30px;
+  box-shadow: rgba(254, 217, 113, 0.6) 7px 7px,
+    rgba(254, 211, 93, 0.5) 15px 15px, rgba(254, 206, 72, 0.4) 20px 20px,
+    rgba(254, 200, 52, 0.3) 25px 25px, rgba(254, 195, 32, 0.25) 30px 30px;
+}
+
+.w-65 {
+  width: 65%;
 }
