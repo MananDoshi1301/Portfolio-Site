@@ -4,7 +4,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a lo
 
 import { projects } from '../../Data/WorkData';
 import './WorkCarousel.css';
-import laptop from '../../images/laptop.png';
+import laptop from '../../images/laptop3.png';
 import video from '../../images/toyStore.webm';
 
 const WorkCarousel = () => {
