@@ -11,6 +11,7 @@ const Banner = () => {
                     backgroundSize:'cover',
                     backgroundImage: `url(${bannerImg})`,
                     backgroundPosition: 'center center',
+                    opacity: 0.5,
                 }}
             />
             <BannerTyped />

@@ -1,0 +1,17 @@
+.smallScreen_div{
+    color: white;       
+}
+
+.smallScreen_title{
+    font-size: 70px;
+    font-weight: 900;
+}
+/* 
+.smallScreen_links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;    
+} */

@@ -8,20 +8,26 @@ import Footer from './components/layout/footer/Footer';
 import Scrollpop from './components/layout/scrollpop/Scrollpop';
 import ProgressBar from './components/layout/progressbar/ProgressBar';
 import AnimationRevolve from './components/layout/animationRevolve/AnimationRevolve';
+import SmallScreen from './components/layout/SmallScreen/SmallScreen';
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-      <Banner />
-      <AnimationRevolve />
-      <Profile />
-      <Work />
-      <Contact />
-      <Footer />
-      <Scrollpop />
-      <ProgressBar />
-    </div>
+    <>
+      <div className="App" id='largeScrn'>
+        <Nav />
+        <Banner />
+        <AnimationRevolve />
+        <Profile />
+        <Work />
+        <Contact />
+        <Footer />
+        <Scrollpop />
+        <ProgressBar />
+      </div>
+      <div id='smallScrn'>
+        <SmallScreen />
+      </div>
+    </>
   );
 }
 

@@ -36,3 +36,21 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: -webkit-linear-gradient(red, blue);
 }
+
+@media (min-width: 1100px) {
+  #smallScrn{
+    display: none;
+  }
+  #largeScrn{
+    display: unset;
+  }
+}
+
+@media (max-width: 1099px) {
+  #largeScrn{
+    display: none;
+  }
+  #smallScrn{
+    display: unset;
+  } 
+}
