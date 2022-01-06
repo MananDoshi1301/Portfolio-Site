@@ -27,7 +27,7 @@ const ContactForm = () => {
             </div>
             <div className="contact-form-content">
                 <span className='contact-form-content-hi'>Say Hi!<span className="loader__dot">.</span><span className="loader__dot">.</span><span className="loader__dot">.</span></span><br />
-                I love working on Web Architectures and Data Architectures. I have the ability to teach. I spend my remaining time in music, sports, personal fitness and outdoors!
+                I love working on Web and Data Architectures. I have the ability to teach. I spend my remaining time in music, sports, personal fitness and outdoors!
             </div>
             <div className="contact-form-divider d-flex justify-content-center"><div></div></div>
             <div className="row contact-form-row text-center">
