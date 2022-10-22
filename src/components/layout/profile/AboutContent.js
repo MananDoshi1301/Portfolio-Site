@@ -14,22 +14,20 @@ const AboutContent = () => {
     >
       <div className='w-90 about-content d-flex flex-column justify-content-around'>
         <div className='about-content-main'>
-          Enthusiastic about Data analysis, its feature branches, Machine Learning and Statistics, I am currently pursuing a Bachelor's of Technology in
-          Information Technology. Looking forward to gaining industry-level
-          experience in a Data Driven field.
+          I am a Final Year IT Engineering student particularly interested in core IT subjects that include Computer systems and networks, Parallel and Distributed Computing, Data Mining and Big Data Analytics. I primarily find myself working in the tech industry for this lifetime. Always looking forward to gain new experiences.
           I also expertise in web development primarily with React!
         </div>
         <br />
         <div className='about-technologies'>
-          <div>Here are a few technologies I've been working with recently:</div>
-          <div className='d-flex gap-5 fs-5'>
+          <div>Here are a few topics and technologies I've been working with recently:</div>
+          <div className='d-flex gap-5 fs-5 mt-3'>
             <ul className='about-technologies-ul'>
               <li>R & Python</li>
-              <li>IBM SPSS</li>
+              <li>AWS</li>
             </ul>
             <ul className='about-technologies-ul'>
-              <li>React.js</li>
-              <li>ML/DS</li>
+              <li>MERN Stack</li>
+              <li>Computer Networks and Systems</li>
             </ul>
           </div>
         </div>
